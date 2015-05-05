@@ -10,17 +10,24 @@ function checkGuess(guess, generateRandomNumber)
 	var statusCode = -1;
 	var statusMessage = "YOUR STATUS MESSAGE GOES HERE";
 
-	if (guess == generateRandomNumber) {
+	if (guess == generateRandomNumber) 
+	{
 		statusCode = 0
 		statusMessage = "Correct!";
-	} else if (guess<generateRandomNumber) {
+	} else if (guess<generateRandomNumber) 
+	{
 		statusCode = 1
 		statusMessage = "Incorrect! Hint: MAS!";
-	} else {
+	} else if (guess>generateRandomNumber)
+	{
 		statusCode = 2
 		statusMessage = "Incorrect! Hint: MENOS!";
+	} else
+	{
+		statusCode = 3
+		
 	}
-
+sDFFDSASDDSSADFSDV 
 
 	// Do not change this line
 	return { "statusCode": statusCode, "statusMessage": statusMessage };
